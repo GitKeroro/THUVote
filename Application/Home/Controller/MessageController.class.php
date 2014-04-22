@@ -40,6 +40,16 @@ class MessageController extends Controller{
     	
     	$this->display();
     }
+    
+    //获取编号为teacher_id的老师的留言
+    public function teacherMessage($teacher_id='')
+    {
+    	$Message = D('Message');
+    	$condition['teacher_id'] = $teacher_id;
+    	$this->teacherMessage = $Message->where($condition)->select(); 
+    	
+    	$this->display();
+    }
        
 }
 

@@ -60,15 +60,15 @@ class VoteController extends Controller{
     }
     
     //学生删除投票信息
-    public function delete($student_no='')
+    public function delete($student_no = '')
     {
     	$Vote = D('Vote');
     	$condition['student_no'] = $student_no;
     	$Vote->where($condition)->delete();
     }
     
-    //统计编号为teacher_id的老师的得票数
-    public function teacherScore($teacher_id)
+    //统计编号为teacher_id的老师的得票总数
+    public function teacherTotalScore($teacher_id)
     {
     	$Vote = D('Vote');
     	$condition['teacher_id'] = $teacher_id;
@@ -77,6 +77,18 @@ class VoteController extends Controller{
     	$this->display();
    	
     }
+    
+    //获取编号为teacher_id 的老师的系内得票数
+    public function teacherInnerScore($teacher_id = '',$teacher_department='')
+    {
+    	$Vote = D('Vote');
+    	$condition['teacher_id']=$teacher_id;
+    	$condition['teacher_department'] = $teacher_department;
+    	$this->InnerScore = $Vote->where($condition)->count();
+    	
+    	$this->display();
+    }
+    
     //获取所有老师的得票总数
     public function TotalScore()
     {
