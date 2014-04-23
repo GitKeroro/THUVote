@@ -1,65 +1,14 @@
-  
-<html lang="zh-cn">
-    
-    <head>
-  
-    <meta charset="utf-8">
-    <title>清华大学第14届良师益友</title>
-    <meta name="description" content="清华大学第十四届良师益友">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="__ROOT__/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__ROOT__/dist/css/style.css" >
-    <link href="/LocalProject/Public/Css/magnific-popup.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="__ROOT__/dist/css/site.min.css">
+<extend name="Base/common" />
 
-	</head>
-	
-	<body class="archive-template" style="">
-	
-	
-	<!-- 导航条
-================================================== -->
-<!-- Fixed navbar -->
-<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target=".navbar-collapse">
-				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="{:U('Index/index')}" style="font-family: '微软雅黑'">良师益友</a>
-		</div>
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="{:U('Index/index')}" style="font-family: '微软雅黑'">首页</a></li>
-				<li><a href="{:U('Vote/index')}" style="font-family: '微软雅黑'">投票</a></li>
-				<li><a href="{:U('CelebrityHall/celebrityHall')}" style="font-family: '微软雅黑'">名人堂</a></li>
-				<li><a href="{:U('Message/index')}" style="font-family: '微软雅黑'">留言板</a></li>
-			</ul>
 
-			<if condition="is_login()">
-				<ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-					<li><a href="{:U('User/logout')}" style="font-family: '微软雅黑'">退出</a></li>
-				</ul>
-			<else />
-				<ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-					<li><a href="{:U('Index/index')}" style="font-family: '微软雅黑'">登录</a>
-					</li>
-				</ul>
-			</if>
-		</div>
-		<!--/.nav-collapse -->
-	</div>
-	<!--container-->
-</div>
-<!--navbar-->
-	
-	
-	
-	
+<block name="body">
+
+  <div style="margin-top: 50pt;"></div>
+  
+  <!-- 主体 -->
+    <div class="container">
+
+
 		<div class="wrap">	
 			<div class="header" style="background-image: url(__ROOT__/img/img8.jpg)">
 			  <div class="logoimg">
@@ -194,34 +143,14 @@
 		</main>		
 		</div>
 		
-		<footer>
-		    <div class="container">
-		        <div class="row">
-		            <div class="col-xs-12">
-		                <div class="submit">
-		                    <p class="text-center">感谢您关注清华大学第14届良师益友评选活动<a href="mailto:admin@bootcss.com"></a></p>
-		                    <p class="text-center">如有任何疑问，请联系清华大学研究生会学术部良师益友组</p>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</footer>
-		    
 		<script src="__ROOT__/dist/js/jquery.min.js"></script>
 		<script src="__ROOT__/dist/js/bootstrap.min.js"></script>
 		<script src="__ROOT__/dist/js/jquery.lazyload.min.js"></script>
 		<script src="__ROOT__/dist/js/jquery.magnific-popup.min.js"></script>	
 		<script type="text/javascript" src="__ROOT__/dist/js/index.min.js"></script>
-		
-	    <!-- Modal -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<script>
-	        
-	   
-			</script>
-			</div>
-	    <!-- /.modal -->
-	</body>
 
-</html>
- 
+
+    </div>
+
+</block>
+

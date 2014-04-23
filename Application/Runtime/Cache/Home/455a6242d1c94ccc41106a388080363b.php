@@ -74,99 +74,13 @@
     <div class="row">
         
 
+  <!-- 主体 -->
+    <div class="container">
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Indicators -->
 
-	<div class="carousel-inner">
-		<div class="item active">
-			<img src="img/header_1.jpg" alt="">
-			<div class="container">
-				<div class="carousel-caption">
-					<h1 style="font-family: '微软雅黑'">第X届良师益友投选活动</h1>
-					<p style="font-family: '微软雅黑'">主办：清华大学研究生会 （学术部）</p>
-					<p>
-						<a class="btn btn-lg btn-primary" href="#" role="button">我要投票！</a>
-					</p>
-				</div>
-			</div>
-		</div>
 	</div>
-</div>
-<!-- /.carousel --> <!-- Marketing messaging and featurettes
-    ================================================== --> <!-- Wrap the rest of the page in another container to center all the content. -->
 
 
-
-
-<div class="container marketing">
-
-	<h1 style="font-family: '微软雅黑'">活动介绍</h1>
-	
-	<hr class="featurette-divider">
-	
-
-	<!-- Three columns of text below the carousel -->
-		 <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/280x280" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/280x280" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" data-src="holder.js/280x280" alt="Generic placeholder image">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-	
-
-<hr class="featurette-divider">
-
-	  <div class="media">
-        <a class="pull-left" href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-        <div class="media-body">
-          <h4 class="media-heading">Media heading</h4>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-        </div>
-      </div>
-      <div class="media">
-        <a class="pull-left" href="#">
-          <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-        </a>
-        <div class="media-body">
-          <h4 class="media-heading">Media heading</h4>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" data-src="holder.js/64x64" alt="Generic placeholder image">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Nested media heading</h4>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </div>
-          </div>
-        </div>
-      </div>
-	
-	
-</div>
-
-<hr class="featurette-divider">
-
-
-
-<!-- /.container --> 
     </div>
 </div>
 

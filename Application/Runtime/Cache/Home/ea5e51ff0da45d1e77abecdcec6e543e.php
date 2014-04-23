@@ -1,4 +1,4 @@
-  
+<?php if (!defined('THINK_PATH')) exit();?>  
 <html lang="zh-cn">
     
     <head>
@@ -9,10 +9,10 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="__ROOT__/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="__ROOT__/dist/css/style.css" >
+    <link rel="stylesheet" type="text/css" href="/THUVote/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/THUVote/dist/css/style.css" >
     <link href="/LocalProject/Public/Css/magnific-popup.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="__ROOT__/dist/css/site.min.css">
+    <link rel="stylesheet" type="text/css" href="/THUVote/dist/css/site.min.css">
 
 	</head>
 	
@@ -30,26 +30,24 @@
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{:U('Index/index')}" style="font-family: '微软雅黑'">良师益友</a>
+			<a class="navbar-brand" href="<?php echo U('Index/index');?>" style="font-family: '微软雅黑'">良师益友</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="{:U('Index/index')}" style="font-family: '微软雅黑'">首页</a></li>
-				<li><a href="{:U('Vote/index')}" style="font-family: '微软雅黑'">投票</a></li>
-				<li><a href="{:U('CelebrityHall/celebrityHall')}" style="font-family: '微软雅黑'">名人堂</a></li>
-				<li><a href="{:U('Message/index')}" style="font-family: '微软雅黑'">留言板</a></li>
+				<li class="active"><a href="<?php echo U('Index/index');?>" style="font-family: '微软雅黑'">首页</a></li>
+				<li><a href="<?php echo U('Vote/index');?>" style="font-family: '微软雅黑'">投票</a></li>
+				<li><a href="<?php echo U('CelebrityHall/celebrityHall');?>" style="font-family: '微软雅黑'">名人堂</a></li>
+				<li><a href="<?php echo U('Message/index');?>" style="font-family: '微软雅黑'">留言板</a></li>
 			</ul>
 
-			<if condition="is_login()">
-				<ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-					<li><a href="{:U('User/logout')}" style="font-family: '微软雅黑'">退出</a></li>
+			<?php if(is_login()): ?><ul class="nav navbar-nav navbar-right" style="margin-right: 0">
+					<li><a href="<?php echo U('User/logout');?>" style="font-family: '微软雅黑'">退出</a></li>
 				</ul>
-			<else />
+			<?php else: ?>
 				<ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-					<li><a href="{:U('Index/index')}" style="font-family: '微软雅黑'">登录</a>
+					<li><a href="<?php echo U('Index/index');?>" style="font-family: '微软雅黑'">登录</a>
 					</li>
-				</ul>
-			</if>
+				</ul><?php endif; ?>
 		</div>
 		<!--/.nav-collapse -->
 	</div>
@@ -61,15 +59,15 @@
 	
 	
 		<div class="wrap">	
-			<div class="header" style="background-image: url(__ROOT__/img/img8.jpg)">
+			<div class="header" style="background-image: url(/THUVote/img/img8.jpg)">
 			  <div class="logoimg">
-			    <a href="__URL__/index" target="_blank"><img src="__ROOT__/img/img2.jpg" alt="清华大学第14届良师益友" width="78"></a>
+			    <a href="/THUVote/index.php?s=/Home/CelebrityHall/index" target="_blank"><img src="/THUVote/img/img2.jpg" alt="清华大学第14届良师益友" width="78"></a>
 			  </div>
 			  <div class="container">
 			    <div class="row">
 			      <div class="col-xs-12">
 			      	<div class="logotxt">
-			      		<h1><a href="__URL__/index" target="_blank">清华大学第14届良师益友</a></h1>
+			      		<h1><a href="/THUVote/index.php?s=/Home/CelebrityHall/index" target="_blank">清华大学第14届良师益友</a></h1>
 			      	</div> 
 			      	<h2 class="text-center">返回首页</h2>
 			      </div>
@@ -84,16 +82,16 @@
 		            	<div class="col-xs-12 col-md-6 col-lg-6">
 		                <article class="post tag-bs2">
 		                    <section class="post-featured-image">
-		                        <a class="thumbnail" href="__URL__/teacher/" data-toggle="modal" data-target="#myModal">
-		                          <img src="__ROOT__/img/loader.gif" width="800" height="600" alt="Infinum">
+		                        <a class="thumbnail" href="/THUVote/index.php?s=/Home/CelebrityHall/teacher/" data-toggle="modal" data-target="#myModal">
+		                          <img src="/THUVote/img/loader.gif" width="800" height="600" alt="Infinum">
 		                        </a>
 		                        <span class="bs2"></span>
 		                    </section>
 		                    <header class="post-header">
-		                        <h2 class="post-title"><a href="__URL__/teacher/ " data-toggle="modal" data-target="#myModal">老师1</a></h2>   
+		                        <h2 class="post-title"><a href="/THUVote/index.php?s=/Home/CelebrityHall/teacher/ " data-toggle="modal" data-target="#myModal">老师1</a></h2>   
 		                    </header>
 		                    <section class="post-content">
-								<p><img src="__ROOT__/img//img3.jpg" alt="Infinum"></p>
+								<p><img src="/THUVote/img//img3.jpg" alt="Infinum"></p>
 		                    </section>
 		                </article>
 		            </div>
@@ -101,16 +99,16 @@
 		            <div class="col-xs-12 col-md-6 col-lg-6">
 		                <article class="post tag-bs2">
 		                    <section class="post-featured-image">
-		                        <a class="thumbnail" href="__URL__/teacher2/"  data-toggle="modal" data-target="#myModal">
-		                          <img src="__ROOT__/img/loader.gif" width="800" height="600" alt="Fortrabbit" >
+		                        <a class="thumbnail" href="/THUVote/index.php?s=/Home/CelebrityHall/teacher2/"  data-toggle="modal" data-target="#myModal">
+		                          <img src="/THUVote/img/loader.gif" width="800" height="600" alt="Fortrabbit" >
 		                        </a>
 		                        <span class="bs2"></span>
 		                    </section>
 		                    <header class="post-header">
-		                        <h2 class="post-title"><a href="__URL__/teacher2/" data-toggle="modal" data-target="#myModal">老师2</a></h2>
+		                        <h2 class="post-title"><a href="/THUVote/index.php?s=/Home/CelebrityHall/teacher2/" data-toggle="modal" data-target="#myModal">老师2</a></h2>
 		                    </header>
 		                    <section class="post-content">
-								<p><img src="__ROOT__/img/img4.jpg" alt="Fortrabbit"></p>
+								<p><img src="/THUVote/img/img4.jpg" alt="Fortrabbit"></p>
 		                    </section>
 		                </article>
 		            </div>
@@ -119,7 +117,7 @@
 		                <article class="post tag-bs3">
 		                    <section class="post-featured-image">
 		                        <a class="thumbnail" href="../TeacherInfo/TeacherInfo.php" target="_blank">
-		                          <img src="__ROOT__/img/loader.gif" width="800" height="600" alt="Inc" >
+		                          <img src="/THUVote/img/loader.gif" width="800" height="600" alt="Inc" >
 		                        </a>
 		                        <span class="bs3"></span>
 		                    </section>
@@ -127,7 +125,7 @@
 		                        <h2 class="post-title"><a href="../TeacherInfo/TeacherInfo.php">老师3</a></h2>
 		                    </header>
 		                    <section class="post-content">                        
-								<p><img src="__ROOT__/img/img5.jpg" alt="Inc"></p>
+								<p><img src="/THUVote/img/img5.jpg" alt="Inc"></p>
 		                    </section>
 		                </article>
 		            </div>
@@ -136,7 +134,7 @@
 		                <article class="post tag-bs2">
 		                    <section class="post-featured-image">
 		                        <a class="thumbnail" href="../TeacherInfo/TeacherInfo.php" target="_blank">
-		                          <img src="__ROOT__/img/loader.gif" width="800" height="600" alt="ooomf" >
+		                          <img src="/THUVote/img/loader.gif" width="800" height="600" alt="ooomf" >
 		                        </a>
 		                        <span class="bs2"></span>
 		                    </section>
@@ -144,7 +142,7 @@
 		                        <h2 class="post-title"><a href="../TeacherInfo/TeacherInfo.php">老师4</a></h2>
 		                    </header>
 		                    <section class="post-content">                       
-								<p><img src="__ROOT__/img/img6.jpg" alt="ooomf"></p>
+								<p><img src="/THUVote/img/img6.jpg" alt="ooomf"></p>
 		                    </section>
 		                </article>
 		            </div>
@@ -153,7 +151,7 @@
 		                <article class="post tag-bs3">
 		                    <section class="post-featured-image">
 		                        <a class="thumbnail" href="../TeacherInfo/TeacherInfo.php" target="_blank">
-		                          <img src="__ROOT__/img/loader.gif" width="800" height="600" alt="Flywheel" >
+		                          <img src="/THUVote/img/loader.gif" width="800" height="600" alt="Flywheel" >
 		                        </a>
 		                        <span class="bs3"></span>
 		                    </section>
@@ -161,7 +159,7 @@
 		                        <h2 class="post-title"><a href="../TeacherInfo/TeacherInfo.php">老师5</a></h2>
 		                    </header>
 		                    <section class="post-content">                        
-								<p><img src="__ROOT__/img/img7.jpg" alt="Flywheel"></p>
+								<p><img src="/THUVote/img/img7.jpg" alt="Flywheel"></p>
 		                    </section>
 		                </article>
 		            </div>
@@ -170,7 +168,7 @@
 		                <article class="post tag-bs2">
 		                    <section class="post-featured-image">
 		                        <a class="thumbnail" href="../TeacherInfo/TeacherInfo.php" target="_blank">
-		                          <img src="__ROOT__/img/loader.gif" width="800" height="600" alt="Sentry" >
+		                          <img src="/THUVote/img/loader.gif" width="800" height="600" alt="Sentry" >
 		                        </a>
 		                        <span class="bs2"></span>
 		                    </section>
@@ -179,7 +177,7 @@
 		                    </header>
 		                    <section class="post-content">
 		                      
-								<p><img src="__ROOT__/img/img3.jpg" alt="��ʦ1"></p>
+								<p><img src="/THUVote/img/img3.jpg" alt="��ʦ1"></p>
 	
 		                    </section>
 		                </article>
@@ -188,7 +186,7 @@
 		        
 		        <nav class="pagination">    
 			    	<span class="page-number">第1页/共7页</span>
-			        <a class="older-posts" href="__URL__/celebrityHall">下一页 →</a>
+			        <a class="older-posts" href="/THUVote/index.php?s=/Home/CelebrityHall/celebrityHall">下一页 →</a>
 				</nav>			
 		    </div>
 		</main>		
@@ -207,11 +205,11 @@
 		    </div>
 		</footer>
 		    
-		<script src="__ROOT__/dist/js/jquery.min.js"></script>
-		<script src="__ROOT__/dist/js/bootstrap.min.js"></script>
-		<script src="__ROOT__/dist/js/jquery.lazyload.min.js"></script>
-		<script src="__ROOT__/dist/js/jquery.magnific-popup.min.js"></script>	
-		<script type="text/javascript" src="__ROOT__/dist/js/index.min.js"></script>
+		<script src="/THUVote/dist/js/jquery.min.js"></script>
+		<script src="/THUVote/dist/js/bootstrap.min.js"></script>
+		<script src="/THUVote/dist/js/jquery.lazyload.min.js"></script>
+		<script src="/THUVote/dist/js/jquery.magnific-popup.min.js"></script>	
+		<script type="text/javascript" src="/THUVote/dist/js/index.min.js"></script>
 		
 	    <!-- Modal -->
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -224,4 +222,3 @@
 	</body>
 
 </html>
- 

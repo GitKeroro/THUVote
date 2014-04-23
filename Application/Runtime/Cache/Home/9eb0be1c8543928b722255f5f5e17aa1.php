@@ -8,7 +8,7 @@
 <meta name="author" content="">
 <!--<link rel="shortcut icon" href="/docs-assets/ico/favicon.png"> -->
 
-<title>TAES-Tsinghua Algorithm Evaluation System</title>
+<title>第X届良师益友投选活动网站</title>
 
 <!-- Bootstrap core CSS -->
 <link href="dist/css/bootstrap.css" rel="stylesheet">
@@ -40,22 +40,22 @@
 				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo U('Index/main');?>" style="font-family: '微软雅黑'">良师益友</a>
+			<a class="navbar-brand" href="<?php echo U('Index/index');?>" style="font-family: '微软雅黑'">良师益友</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="<?php echo U('Index/main');?>" style="font-family: '微软雅黑'">首页</a></li>
+				<li class="active"><a href="<?php echo U('Index/index');?>" style="font-family: '微软雅黑'">首页</a></li>
 				<li><a href="<?php echo U('Vote/index');?>" style="font-family: '微软雅黑'">投票</a></li>
-				<li><a href="<?php echo U('Index/show');?>" style="font-family: '微软雅黑'">名人堂</a></li>
-				<li><a href="<?php echo U('Index/message');?>" style="font-family: '微软雅黑'">留言板</a></li>
+				<li><a href="<?php echo U('CelebrityHall/celebrityHall');?>" style="font-family: '微软雅黑'">名人堂</a></li>
+				<li><a href="<?php echo U('Message/index');?>" style="font-family: '微软雅黑'">留言板</a></li>
 			</ul>
 
 			<?php if(is_login()): ?><ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-					<li><a href="<?php echo U('User/logout');?>" style="font-family: '微软雅黑'">退出</a></li>
+					<li><a href="<?php echo U('Index/logout');?>" style="font-family: '微软雅黑'">退出</a></li>
 				</ul>
 			<?php else: ?>
 				<ul class="nav navbar-nav navbar-right" style="margin-right: 0">
-					<li><a href="<?php echo U('Index/index');?>" style="font-family: '微软雅黑'">登录</a>
+					<li><a href="<?php echo U('Index/login');?>" style="font-family: '微软雅黑'">登录</a>
 					</li>
 				</ul><?php endif; ?>
 		</div>
@@ -63,6 +63,7 @@
 	</div>
 	<!--container-->
 </div>
+  <div style="margin-top: 36pt;"></div>
 <!--navbar-->
 
 	<!-- /头部 -->
@@ -73,173 +74,136 @@
     <div class="row">
         
 
-  <div style="margin-top: 50pt;"></div>
   <!-- 主体 -->
     <div class="container">
 	<div class="row">
 		<div class="span12">
-			<ul  class="pagination pagination-centered">
-					<li>
-						<a href="#">上一页</a>
-					</li>
-					<li>
-						<a href="#">1</a>
-					</li>
-					<li>
-						<a href="<?php echo U('Index/vote2');?>">2</a>
-					</li>
-					<li>
-						<a href="<?php echo U('Index/vote3');?>">3</a>
-					</li>
-
-					<li>
-						<a href="<?php echo U('Index/vote2');?>">下一页</a>
-					</li>
-			</ul>
-
-			<div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
+			
+	
+	 <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">投票须知</h3>
         </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      		<div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-		<div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img data-src="holder.js/300x200" alt="Generic placeholder thumbnail">
-            <div class="caption">
-              <h3>Thumbnail label</h3>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4"></div>
+        <div class="panel-body">
+          Panel content
+          	<div class="alert alert-warning">Warning! Best check yo self, you're not looking too good.</div>
+          	<div class="alert alert-success"> Well done! You successfully read this important alert message.</div>
+			<div class="alert alert-info">Heads up! This alert needs your attention, but it's not super important.</div>
           
+        </div>
       </div>
+      
+            <h1 style="text-align: center;font-family:'微软雅黑'">入选教师</h1>
+      <hr class="featurette-divider">
 
-			<ul  class="pagination pagination-centered">
-					<li>
-						<a href="#">上一页</a>
-					</li>
-					<li>
-						<a href="#">1</a>
-					</li>
-					<li>
-						<a href="<?php echo U('Index/vote2');?>">2</a>
-					</li>
-					<li>
-						<a href="<?php echo U('Index/vote3');?>">3</a>
-					</li>
 
-					<li>
-						<a href="<?php echo U('Index/vote2');?>">下一页</a>
-					</li>
-			</ul>
+<!-- begin row -->
+	<div class="row">
+		
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+            <img data-src="holder.js/150x150" alt="Generic placeholder thumbnail">
+            <div class="caption">
+            	<p style="text-align: center"> <strong>吴建平</strong>
+            		<button type="button" class="btn btn-danger  btn-xs">详情</button>
+            		
+            	</p>
+              <p>计算机科学技术系 </p>
+              <p>
+              	<a href="#" class="btn btn-primary" role="button">投票！</a> 
+              	<a href="#" class="btn btn-default" role="button">我要说</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+            <img data-src="holder.js/150x150" alt="Generic placeholder thumbnail">
+            <div class="caption">
+            	<p> <strong>吴建平</strong>
+            		<span class="label label-danger">详情</span>
+            	</p>
+              <p>计算机科学技术系 </p>
+              <p>
+              	<a href="#" class="btn btn-primary" role="button">投票！</a> 
+              	<a href="#" class="btn btn-default" role="button">我要说</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+       <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+            <img data-src="holder.js/150x150" alt="Generic placeholder thumbnail">
+            <div class="caption">
+            	<p> <strong>吴建平</strong>
+            		<span class="label label-danger">详情</span>
+            	</p>
+              <p>计算机科学技术系 </p>
+              <p>
+              	<a href="#" class="btn btn-primary" role="button">投票！</a> 
+              	<a href="#" class="btn btn-default" role="button">我要说</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+	
+       <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+            <img data-src="holder.js/150x150" alt="Generic placeholder thumbnail">
+            <div class="caption">
+            	<p> <strong>吴建平</strong>
+            		<span class="label label-danger">详情</span>
+            	</p>
+              <p>计算机科学技术系 </p>
+              <p>
+              	<a href="#" class="btn btn-primary" role="button">投票！</a> 
+              	<a href="#" class="btn btn-default" role="button">我要说</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+            <img data-src="holder.js/150x150" alt="Generic placeholder thumbnail">
+            <div class="caption">
+            	<p> <strong>吴建平</strong>
+            		<span class="label label-danger">详情</span>
+            	</p>
+              <p>计算机科学技术系 </p>
+              <p>
+              	<a href="#" class="btn btn-primary" role="button">投票！</a> 
+              	<a href="#" class="btn btn-default" role="button">我要说</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+	
+       <div class="col-sm-3 col-md-2">
+          <div class="thumbnail">
+            <img data-src="holder.js/150x150" alt="Generic placeholder thumbnail">
+            <div class="caption">
+            	<p> <strong>吴建平</strong>
+            		<span class="label label-danger">详情</span>
+            	</p>
+              <p>计算机科学技术系 </p>
+              <p>
+              	<a href="#" class="btn btn-primary" role="button">投票！</a> 
+              	<a href="#" class="btn btn-default" role="button">我要说</a>
+              </p>
+            </div>
+          </div>
+        </div>
+   </div>
+
+<!-- end row -->
+
+
+
 		</div>
 </div>
 
